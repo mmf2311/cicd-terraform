@@ -33,6 +33,14 @@ jobs:
    - name: Initialize Terraform
      run: terraform init
 
+#terraform fmt
+    - name: Terraform Prettify
+     run: terraform fmt
+     
 #terrafrom plan
    - name: Terraform Plan
      run: terraform plan
+
+#terraform validate
+   - name: Terraform Validate
+    run: terraform validate
