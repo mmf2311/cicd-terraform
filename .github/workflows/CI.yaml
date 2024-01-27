@@ -34,7 +34,7 @@ jobs:
      run: terraform init
 
 #terraform fmt
-    - name: Terraform Prettify
+   - name: Terraform Prettify
      run: terraform fmt
      
 #terrafrom plan
@@ -43,4 +43,4 @@ jobs:
 
 #terraform validate
    - name: Terraform Validate
-    run: terraform validate
+     run: terraform validate
