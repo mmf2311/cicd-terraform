@@ -8,7 +8,7 @@ on:
 
 # declare the running agent
 jobs:
- terraform-ci:
+ terraform-cd:
    runs-on: ubuntu-latest
 
    steps:
@@ -31,16 +31,8 @@ jobs:
 
   #terraform init
    - name: Initialize Terraform
-     run: terraform init
+    run: terraform init
 
-  #terraform fmt
-   - name: Terraform Prettify
-     run: terraform fmt
-     
-  #terrafrom plan
-   - name: Terraform Plan
-     run: terraform plan
-
-  #terraform validate
-   - name: Terraform Validate
-     run: terraform validate
+  #terrafrom apply
+   - name: Terraform apply
+    run: terraform apply --auto-approve
