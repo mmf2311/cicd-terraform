@@ -42,5 +42,5 @@ jobs:
      run: terraform init
 
   #terrafrom apply
-   - name: Terraform apply
+   - name: Terraform apply {{ github.event.inputs.environment }}
      run: terraform apply --auto-approve
