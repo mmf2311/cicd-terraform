@@ -31,8 +31,8 @@ jobs:
 
   #terraform init
    - name: Initialize Terraform
-    run: terraform init
+     run: terraform init
 
   #terrafrom apply
    - name: Terraform apply
-    run: terraform apply --auto-approve
+     run: terraform apply --auto-approve
